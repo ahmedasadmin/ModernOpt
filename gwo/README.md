@@ -15,9 +15,34 @@ Grey Wolf Optimizer (GWO) is a **metaheuristic algorithm** inspired by the **hun
 
 In this project, GWO is applied to **minimize** the **Rastrigin function**, which is defined as:
 
-$$
-f(x) = 10n + \sum_{i=1}^{n} \left[ x_i^2 - 10\cos(2\pi x_i) \right]
-$$
+<math display="block">
+        <mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+        <mo>=</mo>
+        <mn>10</mn><mi>n</mi>
+        <mo>+</mo>
+        <munderover>
+            <mo>&sum;</mo>
+            <mrow>
+                <mi>i</mi><mo>=</mo><mn>1</mn>
+            </mrow>
+            <mi>n</mi>
+        </munderover>
+        <mrow>
+            <mo>[</mo>
+            <msup>
+                <mi>x</mi>
+                <mn>2</mn>
+            </msup>
+            <mo>-</mo>
+            <mn>10</mn>
+            <mo>cos</mo>
+            <mo>(</mo>
+            <mn>2</mn><mi>&pi;</mi><mi>x</mi>
+            <mo>)</mo>
+            <mo>]</mo>
+        </mrow>
+    </math>
+
 This function has a **global minimum at (0,0,...,0) with a value of 0** and contains **many local minima**, making it challenging for optimization.
 
 ---
