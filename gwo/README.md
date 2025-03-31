@@ -15,33 +15,68 @@ Grey Wolf Optimizer (GWO) is a **metaheuristic algorithm** inspired by the **hun
 
 In this project, GWO is applied to **minimize** the **Rastrigin function**, which is defined as:
 
-<math display="block">
-        <mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo>
-        <mo>=</mo>
-        <mn>10</mn><mi>n</mi>
-        <mo>+</mo>
-        <munderover>
-            <mo>&sum;</mo>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled MathML Equation</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .math-container {
+            display: inline-block;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        math {
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Stunning Mathematical Equation</h1>
+    
+    <div class="math-container">
+        <math display="block">
+            <mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+            <mo>=</mo>
+            <mn>10</mn><mi>n</mi>
+            <mo>+</mo>
+            <munderover>
+                <mo>&sum;</mo>
+                <mrow>
+                    <mi>i</mi><mo>=</mo><mn>1</mn>
+                </mrow>
+                <mi>n</mi>
+            </munderover>
             <mrow>
-                <mi>i</mi><mo>=</mo><mn>1</mn>
+                <mo>[</mo>
+                <msup>
+                    <mi>x</mi>
+                    <mn>2</mn>
+                </msup>
+                <mo>-</mo>
+                <mn>10</mn>
+                <mo>cos</mo>
+                <mo>(</mo>
+                <mn>2</mn><mi>&pi;</mi><mi>x</mi>
+                <mo>)</mo>
+                <mo>]</mo>
             </mrow>
-            <mi>n</mi>
-        </munderover>
-        <mrow>
-            <mo>[</mo>
-            <msup>
-                <mi>x</mi>
-                <mn>2</mn>
-            </msup>
-            <mo>-</mo>
-            <mn>10</mn>
-            <mo>cos</mo>
-            <mo>(</mo>
-            <mn>2</mn><mi>&pi;</mi><mi>x</mi>
-            <mo>)</mo>
-            <mo>]</mo>
-        </mrow>
-    </math>
+        </math>
+    </div>
+
+</body>
+</html>
 
 This function has a **global minimum at (0,0,...,0) with a value of 0** and contains **many local minima**, making it challenging for optimization.
 
