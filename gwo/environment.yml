@@ -1,0 +1,6 @@
+name: modernopt
+dependencies:
+  - python=3.x
+  - numpy
+  - matplotlib
+  - plotly
